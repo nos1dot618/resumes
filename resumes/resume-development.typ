@@ -20,7 +20,7 @@
 
 #custom-title("Projects")[
   #project-heading(
-    "Minimal Compiler Infrastructure 'irl'",
+    "Minimal Compiler Infrastructure",
     "https://github.com/nos1dot618/irl",
     datetime(year: 2024, month: 5, day: 1),
     "Present",
@@ -31,7 +31,7 @@
   ]
 
   #project-heading(
-    "C Federated Machine Learning Library 'Cerberus'",
+    "C Federated Machine Learning Library",
     "https://github.com/nos1dot618/cerberus",
     datetime(year: 2024, month: 11, day: 1),
     datetime(year: 2025, month: 2, day: 1),
@@ -42,7 +42,7 @@
   ]
 
   #project-heading(
-    "Real Estate Aggregator Platform '25acres'",
+    "Real Estate Aggregator Platform",
     "https://github.com/W1NDSOR/25acres",
     datetime(year: 2024, month: 4, day: 1),
     datetime(year: 2025, month: 5, day: 1),
