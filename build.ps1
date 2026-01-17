@@ -1,6 +1,7 @@
 New-Item -ItemType Directory -Path "dist" -Force | Out-Null
 
-Get-ChildItem resume-*.typ | ForEach-Object {
+Get-ChildItem "resumes/resume-*.typ" | ForEach-Object {
     $out = Join-Path "dist" ([System.IO.Path]::GetFileNameWithoutExtension($_.Name) + ".pdf")
-    typst compile $_.FullName $out
+    typst compile --root "./" $_.FullName $out
+    Write-Host "[INFO] Generated '$out'."
 }

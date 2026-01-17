@@ -1,4 +1,4 @@
-#import "template/lib.typ": *
+#import "/template/lib.typ": *
 
 #let education-section() = [
   #custom-title("Education")[

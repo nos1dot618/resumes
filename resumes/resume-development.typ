@@ -1,5 +1,5 @@
-#import "template/lib.typ": *
-#import "sections.typ": *
+#import "/template/lib.typ": *
+#import "/resumes/sections.typ": *
 
 #show: resume.with(
   top-margin: 0.45in,

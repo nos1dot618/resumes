@@ -3,7 +3,7 @@
 Compile specific resume:
 
 ```shell
-typst compile resume-development.typ dist/resume-development.pdf
+typst compile --root resumes/resume-development.typ dist/resume-development.pdf
 ```
 
 ## Courtesy
