@@ -27,7 +27,7 @@
     ]
 
     #work-heading(
-      [Research Assistant | #emph(link("https://gitlab.com/vsqoe", "GitLab Project Organization"))],
+      [Research Assistant | #emph(link("https://github.com/vsqoe", "Github Project Organization"))],
       [Networks and Systems Security Lab - IIITD | #link("https://iiitd.ac.in/IHERN/joinus.php", "Website")],
       "Delhi, India",
       datetime(year: 2024, month: 5, day: 1),
