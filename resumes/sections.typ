@@ -22,8 +22,8 @@
       datetime(year: 2025, month: 7, day: 1),
       "Present",
     )[
-      - Contributed to the development of ZLUA, a core component of ZL Tech's unified cloud-native data governance platform, used by Fortune 500 enterprises to manage unstructured data at scale.
-      - Designed and implemented backend features using Java, C\#, JSP, and XML, integrating with Apache Tomcat, Maven, Tika, and Ant for deployment and content processing.
+      - Worked on task synchronization and bulk parallel processing across clusters within ZL's analytics module, resulting in over a 100% performance improvement.
+      - Implemented task completion time estimation and duplicate item detection when processing millions of items during data loading.
     ]
 
     #work-heading(
