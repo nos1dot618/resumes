@@ -23,7 +23,7 @@
     "Axiom Text Editor",
     "https://github.com/nos1dot618/axiom",
     datetime(year: 2025, month: 12, day: 1),
-    datetime(year: 2026, month: 3, day: 1),
+    "Present",
   )[
     - _*Key Skills:* C\#, .NET, Language Server Protocol (LSP), Desktop Applications, Editor Architecture_
     - Developed a native Windows text editor with multi-language support and Language Server Protocol integration for intelligent code editing features. Implemented modular editor components including syntax highlighting, file management, and extensible language tooling, focusing on maintainable architecture and responsive UI design.
