@@ -11,7 +11,7 @@
   email: "lakshay@9th.fun",
   website: "9th.fun",
   linkedin-user-id: "nos1dot618",
-  github-username: "nos1dot618",
+  gitlab-username: "ninthcircle",
 )
 
 #education-section()
