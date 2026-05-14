@@ -11,7 +11,7 @@
   email: "lakshay@9th.fun",
   website: "9th.fun",
   linkedin-user-id: "nos1dot618",
-  github-username: "nos1dot618",
+  gitlab-username: "ninthcircle",
 )
 
 #education-section()
@@ -21,7 +21,7 @@
 #custom-title("Projects")[
   #project-heading(
     "Minimal Compiler Infrastructure",
-    "https://github.com/nos1dot618/irl",
+    "https://gitlab.com/ninthcircle/irl",
     datetime(year: 2024, month: 5, day: 1),
     "Present",
   )[
@@ -32,7 +32,7 @@
 
   #project-heading(
     "Exploring Compiler Optimizations",
-    "https://github.com/nos1dot618/cop",
+    "https://gitlab.com/ninthcircle/cop",
     datetime(year: 2024, month: 11, day: 1),
     datetime(year: 2025, month: 2, day: 1),
   )[
@@ -41,14 +41,15 @@
   ]
 
   #project-heading(
-    "Task-Based Parallel Runtime Library",
-    "https://github.com/nos1dot618/quill",
-    datetime(year: 2025, month: 1, day: 1),
-    datetime(year: 2025, month: 4, day: 1),
+    "Garbage Collector for C",
+    "https://gitlab.com/ninthcircle/gcc",
+    datetime(year: 2025, month: 2, day: 1),
+    "Present",
   )[
-    - _*Key Skills:* Parallel Programming, Runtime Systems, C++, Multithreading, NUMA_
-    - Designed and implemented a task-based parallel runtime library focused on efficient management of concurrent tasks using a worker-based model to minimize synchronization overhead.
-    - Developed multiple custom runtime systems including async-finish, energy-efficient, numa-aware, receiver-initiated, and trace-and-replay runtime to explore scalability, energy efficiency, and memory locality across heterogeneous hardware.
+    - _*Key Skills:* Runtime Systems, C, Garbage Collection, Memory Management, Systems Programming_
+    - Developed a conservative mark-and-sweep garbage collector for C with an 8-byte aligned bump allocator and segmented heap design.
+    - Implemented stack, heap, and global-root scanning for automatic memory reclamation.
+    - Designed page-level memory management using `mmap`, `mprotect`, and `madvise`.
   ]
 ]
 
