@@ -22,8 +22,8 @@
       datetime(year: 2025, month: 7, day: 1),
       "Present",
     )[
-      - Worked on task synchronization and bulk parallel processing across clusters within ZL's analytics module, resulting in over a 100% performance improvement.
-      - Implemented task completion time estimation and duplicate item detection when processing millions of items during data loading.
+      - Developed task synchronization and bulk parallel processing mechanisms across clusters within ZL's analytics module, achieving over 100% performance improvement.
+      - Implemented task completion time estimation and duplicate item detection for large-scale data loading workflows processing millions of items.
     ]
 
     #work-heading(
@@ -33,15 +33,15 @@
       datetime(year: 2024, month: 5, day: 1),
       datetime(year: 2025, month: 5, day: 1),
     )[
-      - *Objective:* Address quality degradation in video streaming applications when fallback from QUIC to TCP occurs due to UDP blocking.
-      - *Solution:* Implemented a mechanism to send notifications in QUIC packets to anticipate UDP blocking. Server logs the kernel congestion window state to be used in the upcoming TCP connection. Improved user experience by avoiding TCP slow start, thus preventing buffering during fallback.
+      - Researched mechanisms to mitigate video streaming quality degradation during fallback from QUIC to TCP caused by UDP blocking.
+      - Implemented QUIC-based notification signaling and kernel congestion window state reuse to bypass TCP slow start, reducing buffering and improving user experience during fallback transitions.
     ]
   ]
 ]
 
 #let awards-section() = [
   #custom-title("Awards")[
-    Awarded *Summer Undergraduate Research Fellowship* in 2023 by IRD-IIITD for the project _"Utilizing ultrasonic distance sensors as a mapping tool to design user-friendly CST"_. \
-    Awarded *CHANAKYA Fellowship* by *iHub Anubhuti Foundation* in 2024 for the project _"A Unified Approach to User Emotion Detection through Emojis and Textual Analysis"_.
+    - Awarded the *Summer Undergraduate Research Fellowship* (2023) by *IRD-IIITD* for the project _"Utilizing Ultrasonic Distance Sensors as a Mapping Tool to Design User-Friendly CST"_.
+    - Awarded the *CHANAKYA Fellowship* (2024) by *iHub Anubhuti Foundation* for the project _"A Unified Approach to User Emotion Detection through Emojis and Textual Analysis"_.
   ]
 ]
