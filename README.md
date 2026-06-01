@@ -9,8 +9,8 @@ typst compile --root resumes/resume-development.typ dist/resume-development.pdf
 Build all the resumes:
 
 ```shell
-bash setup.sh # For setting up pre-commit hook.
-bash build.sh
+python make.py setup
+python make.py build
 ```
 
 ## Courtesy

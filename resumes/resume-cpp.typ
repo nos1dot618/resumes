@@ -7,7 +7,7 @@
   author-position: center,
   personal-info-position: center,
   author-name: "Lakshay Chauhan",
-  phone: "(+91) 99114 30026",
+  phone: "99114 30026",
   email: "lakshay@9th.fun",
   website: "9th.fun",
   linkedin-user-id: "nos1dot618",
@@ -20,35 +20,34 @@
 
 #custom-title("Projects")[
   #project-heading(
-    "Minimal Compiler Infrastructure",
-    "https://github.com/nos1dot618/irl",
-    datetime(year: 2024, month: 5, day: 1),
-    "Present",
+    "Quorum — Distributed Key-Value Store",
+    "https://gitlab.com/ninthcircle/quorum",
+    datetime(year: 2026, month: 1, day: 1),
+    datetime(year: 2026, month: 3, day: 1),
   )[
-    - _*Key Skills:* Compiler Infrastructure, Design and Optimization, Rust, FASM, WASM, Graphviz_
-    - Developed a minimal compiler infrastructure inspired by LLVM. It converts source code into an optimized control flow graph (CFG) and translates it into target-specific assembly code.
-    - Implemented CFG optimization passes, such as identifier validation, constant folding, and CFG simplification, ensuring high-performance code generation.
+    - Engineered a distributed key-value store in Java, focusing on scalable backend architecture, inter-node communication, and fault-tolerant request processing.
+    - Designed data replication and synchronization mechanisms to maintain consistency across multiple nodes under concurrent workloads. Built modular networking, persistence, and concurrency components enabling reliable request handling and distributed systems experimentation.
   ]
 
   #project-heading(
-    "Immediate-Mode GUI Framework",
-    "https://github.com/nos1dot618/voyage",
-    datetime(year: 2024, month: 2, day: 1),
-    datetime(year: 2024, month: 5, day: 1),
+    "Quill — Task-Based Parallel Runtime Library",
+    "https://gitlab.com/ninthcircle/quill",
+    datetime(year: 2025, month: 9, day: 1),
+    datetime(year: 2025, month: 12, day: 1),
   )[
-    - _*Key Skills:*  C/C++, Graphics Programming, Systems Programming, UI Frameworks, Rendering Pipelines_
-    - Designed and implemented a lightweight immediate-mode GUI framework from scratch using a low-level graphics library. Built a real-time rendering loop, input/event handling system, and modular UI components with minimal abstraction overhead. 
-    - Focused on performance, explicit state management, and predictable memory usage for interactive applications.
+    - Developed a task-based parallel runtime library in C++ for efficient execution of concurrent workloads across worker threads.
+    - Implemented work scheduling, task dispatch, and synchronization primitives to maximize throughput while minimizing coordination overhead.
+    - Designed reusable abstractions for parallel execution, improving scalability and resource utilization in multithreaded applications.
   ]
 
   #project-heading(
-    "Needham Shcroeder Based PDF Print Server",
-    "https://github.com/nos1dot618/keyden",
-    datetime(year: 2025, month: 3, day: 1),
-    datetime(year: 2025, month: 5, day: 1),
+    "Analysis of Congestion Control algos in TCP Variants",
+    "https://gitlab.com/ninthcircle/cctl-analysis",
+    datetime(year: 2024, month: 8, day: 1),
+    datetime(year: 2024, month: 11, day: 1),
   )[
-    - _*Key Skills:* C/C++, Networking, Cryptography, Client-Server Systems, Security Protocols_
-    - Implemented a secure client-server print service using the Needham–Schroeder authentication protocol. Designed custom request/response messaging and session validation to prevent unauthorized access. Gained hands-on experience with low-level networking, protocol correctness, and security-aware systems design.
+    - Conducted performance analysis of TCP congestion control algorithms using C++, evaluating throughput, latency, and network behavior under varying conditions.
+    - Built benchmarking and data collection workflows to compare algorithmic trade-offs across multiple TCP variants. Investigated protocol-level optimization techniques and system bottlenecks, strengthening understanding of low-latency networking and performance engineering.
   ]
 ]
 
