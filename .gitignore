@@ -1,3 +1,5 @@
 **.pdf
 !dist/*.pdf
 dist/*.csv
+dist/company/
+resumes/company/
