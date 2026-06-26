@@ -1,9 +1,9 @@
+import argparse
 import csv
+from pathlib import Path
+import requests
 import subprocess
 import sys
-from pathlib import Path
-
-import requests
 
 URL = "https://gitlab.com/api/v4/users/ninthcircle/projects"
 OUTPUT_DIR = "dist"
@@ -68,10 +68,19 @@ def subcommand_generate_projects_csv():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        error("Expected subcommand: build, setup, projects", exit=True)
+    parser = argparse.ArgumentParser(prog="make.py", description="Resume build tool")
 
-    match sys.argv[1]:
+    subparsers = parser.add_subparsers(dest="command", required=True)
+    subparsers.add_parser("setup", help="Configure Git hooks")
+    subparsers.add_parser(
+        "build", help="Build all the resumes present inside the resumes/ directory"
+    )
+    subparsers.add_parser(
+        "projects", help="Generate CSV file of my projects fetched through GitLab API"
+    )
+
+    args = parser.parse_args()
+    match args.command:
         case "setup":
             subcommand_setup()
         case "build":
