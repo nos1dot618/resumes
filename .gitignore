@@ -1,5 +1,8 @@
 **.pdf
+**.png
 !dist/*.pdf
+!dist/*.png
 dist/*.csv
 dist/company/
 resumes/company/
+venv/
