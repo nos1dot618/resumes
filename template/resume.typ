@@ -15,7 +15,7 @@
   email: "",
   website: "",
   linkedin-user-id: "",
-  gitlab-username: "",
+  github-username: "",
   body,
 ) = {
   set document(
@@ -76,7 +76,7 @@
         contact_item(email, link-type: "mailto:"),
         contact_item(website, link-type: "https://", prefix: "https://"),
         contact_item(linkedin-user-id, link-type: "https://linkedin.com/in/", prefix: "linkedin.com/in/"),
-        contact_item(gitlab-username, link-type: "https://gitlab.com/", prefix: "gitlab.com/"),
+        contact_item(github-username, link-type: "https://github.com/", prefix: "github.com/"),
       )
       items
         .filter(x => x != none)
