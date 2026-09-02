@@ -10,18 +10,23 @@ RESUMES_DIR = Path("resumes")
 VENV_DIR = Path("venv")
 
 
-def log(level, message):
-    print(f"[{level}] {message}")
+def log(level, message, color=None):
+    try:
+        from termcolor import colored
+
+        print(f"[{colored(level, color)}] {message}")
+    except ImportError:
+        print(f"[{level}] {message}")
 
 
 def error(message, exit=False):
-    log("ERROR", message)
+    log("ERROR", message, color="red")
     if exit:
         sys.exit(1)
 
 
 def info(message):
-    log("INFO", message)
+    log("INFO", message, color="blue")
 
 
 def python():
@@ -33,6 +38,11 @@ def python():
 
 
 def subcommand_build():
+    # Rerun the build using the virtual environment's Python.
+    if Path(sys.executable).resolve() != Path(python()).resolve():
+        subprocess.run([python(), __file__, "build"], check=True)
+        return
+
     OUTPUT_DIR.mkdir(exist_ok=True)
 
     for file in RESUMES_DIR.rglob("*resume-*.typ"):
@@ -49,8 +59,9 @@ def subcommand_build():
 
         info(f"Generated '{out_pdf}'.")
 
-        import fitz
-        pdf_document = fitz.open(out_pdf)
+        import pymupdf
+
+        pdf_document = pymupdf.open(out_pdf)
         page = pdf_document[0]
         pix = page.get_pixmap(dpi=300)
         pix.save(out_png)
@@ -59,8 +70,15 @@ def subcommand_build():
 
 
 def subcommand_setup():
+    try:
+        subprocess.run(
+            ["git", "config", "--unset-all", "core.hooksPath"],
+            check=True,
+        )
+    except:
+        pass
     subprocess.run(
-        ["git", "config", "core.hooksPath", ".githooks"],
+        ["pre-commit", "install"],
         check=True,
     )
     info("Configured Git hooks.")
@@ -84,6 +102,7 @@ def subcommand_setup():
 
 def subcommand_generate_projects_csv():
     import requests
+
     out = "dist/gitlab_repos.csv"
     params = {"visibility": "public", "per_page": 200}
 
