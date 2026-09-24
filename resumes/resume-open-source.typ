@@ -63,4 +63,4 @@
   ]
 ]
 
-#awards-section()
+#awards-section(include-projects-brief: false)

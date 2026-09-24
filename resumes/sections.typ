@@ -50,15 +50,15 @@
   ]
 ]
 
-#let awards-section() = [
+#let awards-section(include-projects-brief: true) = [
   #custom-title("Awards")[
-    - Awarded the *Summer Undergraduate Research Fellowship* (2023) by *IRD-IIITD* for the project _"Utilizing Ultrasonic Distance Sensors as a Mapping Tool to Design User-Friendly CST"_.
-    - Awarded the *CHANAKYA Fellowship* (2024) by *iHub Anubhuti Foundation* for the project _"A Unified Approach to User Emotion Detection through Emojis and Textual Analysis"_.
+    - Awarded the *Summer Undergraduate Research Fellowship* (2023) by *IRD-IIITD* #if include-projects-brief [for the project _"Utilizing Ultrasonic Distance Sensors as a Mapping Tool to Design User-Friendly CST"_].
+    - Awarded the *CHANAKYA Fellowship* (2024) by *iHub Anubhuti Foundation* #if include-projects-brief [for the project _"A Unified Approach to User Emotion Detection through Emojis and Textual Analysis"_].
   ]
 ]
 
 #let open-source-section() = [
-  #custom-title("Open Source")[
-    Active open-source contributor to #underline(link("https://github.com/nos1dot618?tab=overview&from=2026-08-01&to=2026-08-31&org=microsoft", "Microsoft")), #underline(link("https://github.com/nos1dot618?tab=overview&from=2026-08-01&to=2026-08-31&org=powershell", "PowerShell")), #underline(link("https://github.com/nos1dot618?tab=overview&from=2026-08-01&to=2026-08-31&org=nushell", "Nushell")), and other projects, with contributions spanning features, bug fixes, developer tooling, documentation, and code reviews.
+  #custom-title("Open Source Contribution")[
+    Active open-source contributor to #strong(underline(link("https://github.com/microsoft", "Microsoft"))) (primarily MSSQL integrations including `mssql-rs` and `mssql-django`), #strong(underline(link("https://github.com/cloudflare", "Cloudflare"))), #strong(underline(link("https://github.com/llvm", "LLVM"))), #strong(underline(link("https://github.com/nushell", "Nushell"))), #strong(underline(link("https://github.com/github", "GitHub"))), and other projects, contributing issues, features, bug fixes, developer tooling, pull requests, code reviews, and documentation. A complete timeline of contributions is available at #strong(underline(link("https://osc.9th.fun", "osc.9th.fun"))).
   ]
 ]
