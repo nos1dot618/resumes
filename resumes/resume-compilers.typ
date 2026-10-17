@@ -53,6 +53,8 @@
   ]
 ]
 
+#open-source-section()
+
 #custom-title("Technical Skills")[
   #skills()[
     - *Languages:*  C, C++, Rust, Assembly, Java, Kotlin, JavaScript, Python, Bash, Haskell
@@ -61,5 +63,3 @@
     - *Technical Electives:* Data Structures \& Algorithms, Operating Systems, Cryptography, Database Management, Computer Security, Computer Networks, Compilers, Machine Learning, Natural Language Processing
   ]
 ]
-
-#awards-section()
